@@ -104,7 +104,7 @@ int main(){
     printf("Current Congestion Control -> Reno\n");
     printf("---------------------------------------------------------------------------------------\n");
     for(int i = 0 ; i < 5 ; i++){
-        checkERROR = listen(MeasureSocket, 1);
+        checkERROR = listen(MeasureSocket, 10);
         if (checkERROR < 0){
             printf("ERROR! set listening failed.\n");
         }
